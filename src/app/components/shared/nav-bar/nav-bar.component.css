@@ -1,28 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans&family=Roboto&display=swap');
+
+/* font-family: 'Balsamiq Sans', cursive; */
+
 .contenedor .navbar {
     margin: 0;
     padding: 0;
     width: 80%;
     height: 20vh;
     background: #fff;
+    font-family: 'Roboto', sans-serif;
 }
 
-.contenedor .navbar .logo {
+.contenedor .navbar .primerNavBar {
+    margin: 0;
+    padding: 0;
     width: 100%;
     height: 70%;
     background: #fff;
+    display: flex;
 }
 
-.contenedor .navbar .navegacion {
+.primerNavBar .logo {
+    margin: 0;
+    padding: 0;
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.nombrePagina .main {
+    font-size: 24px;
+}
+
+.nombrePagina .main span {
+    color: #f0ae00;
+}
+
+.primerNavBar .redes {
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes * {
+    margin: 0 10px;
+    color: #f0ae00;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.redes .fa {
+    font-size: 30px;
+}
+
+.contenedor .navbar .segundoNavbar {
     width: 100%;
     height: 30%;
-    background: #000;
+    background-color: #000;
     color: #fff;
+    display: flex;
+}
+
+.segundoNavbar li {
+    list-style: none;
+    cursor: pointer;
+    margin: 0 10px;
+}
+
+.segundoNavbar .navegacion {
+    margin: 0;
+    padding: 0;
+    width: 60%;
+    height: 100%;
     display: flex;
     justify-content: start;
     align-items: center;
 }
 
-.navegacion li {
-    list-style: none;
-    margin: 0 10px;
+.segundoNavbar .navContact {
+    margin: 0;
+    padding: 0;
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
