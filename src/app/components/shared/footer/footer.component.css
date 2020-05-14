@@ -1,0 +1,57 @@
+.contenedor .footer {
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    height: 40vh;
+    font-family: 'Roboto', sans-serif;
+    background: #1f1f1f;
+    color: #b8b8b8;
+    display: flex;
+}
+
+.footer .contactUs {
+    width: 40%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.footer .customerService {
+    width: 40%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.footer .weAccept {
+    width: 20%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.title {
+    font-size: 18px;
+}
+
+.redes * {
+    margin: 0 10px;
+}
+
+.redes .fa {
+    font-size: 20px;
+}
+
+.enlace span {
+    color: #f0ae00;
+}
