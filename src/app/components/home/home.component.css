@@ -1,0 +1,168 @@
+.contenedor .main-img {
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    height: 75vh;
+    background: #1f1f1f;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 10vh;
+    background: url('./../../../assets/img/main-wall.webp');
+}
+
+.main-img button {
+    position: absolute;
+    background: #f0ae00;
+    border: none;
+    color: #fff;
+    width: 10%;
+    height: 6%;
+    left: 15%;
+    bottom: 10%;
+}
+
+.main-img .cuadro {
+    position: absolute;
+    width: 30%;
+    height: 45%;
+    background: rgba(255, 255, 255, 0.513);
+    left: 15%;
+    bottom: 18%;
+}
+
+.cuadro .title {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100px;
+    left: 5%;
+}
+
+.cuadro .title-2 {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-size: 100px;
+    left: 5%;
+    bottom: 18%;
+}
+
+.cuadro .sub {
+    position: relative;
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    left: 5%;
+    bottom: 25%;
+}
+
+.offers {
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    height: 35vh;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    display: flex;
+}
+
+.offers .garantia {
+    width: 47%;
+    height: 100%;
+    background: #100c07;
+    margin-right: 3%;
+    background: url('./../../../assets/img/offers-1.webp');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.garantia .texto {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    text-align: center;
+}
+
+.garantia .texto-2 {
+    color: #fff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px;
+    text-align: center;
+}
+
+.offers .newModels {
+    width: 50%;
+    height: 100%;
+    background: #100c07;
+    background: url('./../../../assets/img/offers-2.webp');
+}
+
+.newModels .rectangulo {
+    width: 95%;
+    height: 90%;
+    border: 2px solid #fff;
+    position: relative;
+    left: 2.5%;
+    top: 5%;
+}
+
+.rectangulo .camera {
+    position: relative;
+    left: 5%;
+    bottom: 15%;
+}
+
+.newModels .sub {
+    position: relative;
+    color: #000;
+    left: 50%;
+    bottom: 70%;
+    font-size: 22px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.newModels .main {
+    position: relative;
+    color: #fff;
+    left: 50%;
+    bottom: 70%;
+    width: 40%;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.title-section {
+    width: 80%;
+    height: 7vh;
+    color: #fff;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5vh;
+    font-family: 'Roboto', sans-serif;
+}
+
+.title-section span {
+    color: #f0ae00;
+}
+
+.camera-section {
+    width: 80%;
+    height: 60vh;
+}
+
+.camera-section .title-section {
+    margin: 0;
+    width: 100%;
+    height: 15%;
+    font-size: 25px;
+    color: #000;
+    background: #fff;
+}
+
+.camera-section .list-camera {
+    width: 100%;
+    height: 85%;
+    background: #000;
+}
