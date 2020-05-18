@@ -19,9 +19,24 @@
             <input type="number" name="" id="">
             <br>
             <button class="btn btn-block ">Add to Cart</button>
-            <h3>Product Info</h3>
-            <div *ngFor="let description of product.description">
-                <div>°{{description}}</div>
+            <div id="accordion">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                            <div data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                Product Info
+                            </div>
+                        </h5>
+                    </div>
+
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                            <div class="div" *ngFor="let description of product.description">
+                                *{{description}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>

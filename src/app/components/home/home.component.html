@@ -41,7 +41,7 @@
             <div class="camera-item" *ngFor="let camara of cameraProducts">
                 <div>
                     <img [src]="camara.img" alt="">
-                    <span>Mostrar Detalles</span>
+                    <span (click)="GetIdToChange(camara.id)">Mostrar Detalles</span>
                 </div>
                 <span>{{camara.product}}</span>
                 <span>${{camara.price |number}}</span>
@@ -60,7 +60,7 @@
             <div class="camera-item" *ngFor="let accesorio of accesoriosProducts">
                 <div>
                     <img [src]="accesorio.img" alt="">
-                    <span>Mostar Detalles</span>
+                    <span (click)="GetIdToChange(accesorio.id)">Mostar Detalles</span>
                 </div>
                 <span>{{accesorio.product}}</span>
                 <span>${{accesorio.price |number}}</span>

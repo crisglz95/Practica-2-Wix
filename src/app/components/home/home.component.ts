@@ -4,6 +4,8 @@ import { ProductsInterface } from '../../interfaces/ecommerce.interface';
 import { from } from "rxjs/observable/from";
 import { take, tap, map, filter } from 'rxjs/operators';
 
+import { Router } from '@angular/router';
+
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -14,7 +16,7 @@ export class HomeComponent implements OnInit {
   public cameraProducts: Array<ProductsInterface> = [];
   public accesoriosProducts: Array<ProductsInterface> = [];
 
-  constructor() {
+  constructor(private roter: Router) {
     this.ObtenerCamaras();
     this.ObtenerAccesorios();
    }
@@ -53,6 +55,11 @@ export class HomeComponent implements OnInit {
       tap((value: ProductsInterface) => this.accesoriosProducts.push(value))
     )
     .subscribe((value) => console.log(this.accesoriosProducts));
+  }
+
+  public GetIdToChange(id){
+    console.log(id);
+    this.roter.navigate(['detail-product', id]);
   }
 
 }
