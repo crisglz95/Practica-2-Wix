@@ -38,8 +38,33 @@
             Digital Cameras
         </div>
         <div class="list-camera">
-
+            <div class="camera-item" *ngFor="let camara of cameraProducts">
+                <div>
+                    <img [src]="camara.img" alt="">
+                    <span>Mostrar Detalles</span>
+                </div>
+                <span>{{camara.product}}</span>
+                <span>${{camara.price |number}}</span>
+            </div>
         </div>
     </div>
 
+</div>
+
+<div class="contenedor">
+    <div class="camera-section">
+        <div class="title-section">
+            Lenses & Accesories
+        </div>
+        <div class="list-camera">
+            <div class="camera-item" *ngFor="let accesorio of accesoriosProducts">
+                <div>
+                    <img [src]="accesorio.img" alt="">
+                    <span>Mostar Detalles</span>
+                </div>
+                <span>{{accesorio.product}}</span>
+                <span>${{accesorio.price |number}}</span>
+            </div>
+        </div>
+    </div>
 </div>

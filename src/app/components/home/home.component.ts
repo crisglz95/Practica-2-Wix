@@ -1,4 +1,8 @@
 import { Component, OnInit } from '@angular/core';
+import { Products } from './../../data/data';
+import { ProductsInterface } from '../../interfaces/ecommerce.interface';
+import { from } from "rxjs/observable/from";
+import { take, tap, map, filter } from 'rxjs/operators';
 
 @Component({
   selector: 'app-home',
@@ -7,9 +11,48 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  constructor() { }
+  public cameraProducts: Array<ProductsInterface> = [];
+  public accesoriosProducts: Array<ProductsInterface> = [];
+
+  constructor() {
+    this.ObtenerCamaras();
+    this.ObtenerAccesorios();
+   }
 
   ngOnInit() {
+  }
+
+  public ObtenerCamaras(){
+    from(Products)
+    .pipe(
+      map((producto: ProductsInterface) =>{
+        let dirImg = `./../../../${producto.img}`;
+        return{
+          ...producto, 
+          img: dirImg
+        }
+      }),
+      take(4),
+      tap((value: ProductsInterface) => this.cameraProducts.push(value))
+    )
+    .subscribe((value) => console.log(this.cameraProducts))
+  }
+
+  public ObtenerAccesorios(){
+    from(Products)
+    .pipe(
+      filter(producto => producto.department === 2),
+      map((producto: ProductsInterface) =>{
+        let dirImg = `./../../../${producto.img}`;
+        return{
+          ...producto, 
+          img: dirImg
+        }
+      }),
+      take(4),
+      tap((value: ProductsInterface) => this.accesoriosProducts.push(value))
+    )
+    .subscribe((value) => console.log(this.accesoriosProducts));
   }
 
 }

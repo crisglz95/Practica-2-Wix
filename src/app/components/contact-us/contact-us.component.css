@@ -1,0 +1,45 @@
+.contenedor .main-img {
+    width: 80%;
+    height: 55vh;
+    margin: 0;
+    margin-top: 10vh;
+    padding: 0;
+    background: url('./../../../assets/img/wall-contact.webp');
+    background-size: cover;
+}
+
+.main-img .cuadro {
+    position: absolute;
+    width: 25%;
+    height: 30%;
+    background: rgba(255, 255, 255, 0.513);
+    left: 15%;
+    top: 35%;
+}
+
+.contenedor .formulario {
+    width: 65%;
+    height: 70vh;
+    margin: 0;
+    padding: 0;
+}
+
+.formulario .info-contact {
+    padding: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.formulario .formulario-us {
+    padding-right: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.formulario-us input {
+    border-radius: 0;
+    border: 1px solid #000;
+}
+
+.formulario-us textarea {
+    border-radius: 0;
+    border: 1px solid #000;
+}

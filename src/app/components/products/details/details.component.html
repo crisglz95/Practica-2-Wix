@@ -1,0 +1,28 @@
+<div class="contenedor">
+    <div class="row mt-3">
+        <div class="col-12">
+            Home/I'm a Product
+        </div>
+    </div>
+</div>
+
+<div class="contenedor">
+    <div class="row mt-4 mb-4">
+        <div class="col-6 text-center">
+            <img [src]="product.img" alt="">
+        </div>
+        <div class="col-6">
+            <h2>{{product.product}}</h2>
+            <small>SKU: 00{{product.id}}</small>
+            <div class="price">${{product.price |number}}</div>
+            <small>Quantity</small><br>
+            <input type="number" name="" id="">
+            <br>
+            <button class="btn btn-block ">Add to Cart</button>
+            <h3>Product Info</h3>
+            <div *ngFor="let description of product.description">
+                <div>°{{description}}</div>
+            </div>
+        </div>
+    </div>
+</div>

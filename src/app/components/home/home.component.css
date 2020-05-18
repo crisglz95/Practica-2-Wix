@@ -164,5 +164,68 @@
 .camera-section .list-camera {
     width: 100%;
     height: 85%;
-    background: #000;
+    display: flex;
+}
+
+.list-camera .camera-item {
+    width: 20%;
+    height: 100%;
+    background: #fff;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+    display: flex;
+    flex-direction: column;
+}
+
+.camera-item div {
+    overflow: hidden!important;
+    width: 100%;
+    height: 70%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+
+.camera-item>span {
+    padding: 10px;
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+.camera-item div * {
+    position: absolute;
+    overflow: hidden;
+}
+
+.camera-item>div>img {
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    box-sizing: border-box;
+}
+
+.camera-item>div>span {
+    z-index: 3;
+    display: block;
+    bottom: 0;
+    width: 100%;
+    height: 0%;
+    text-align: center;
+    background: #ccc;
+    opacity: 0.7;
+    line-height: 50px;
+    transition: 0.5s;
+}
+
+.camera-item>div:hover span {
+    height: 20%;
+    width: 100%;
+    display: block;
+    transition: 0.5s;
+}
+
+.camera-item>div:hover img {
+    transform: scale(2);
+    transition: 0.5s;
 }

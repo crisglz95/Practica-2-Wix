@@ -1,0 +1,18 @@
+<div class="contenedor">
+    <!-- <div class="camera-section">
+        <div class="list-camera"> -->
+    <div class="row">
+        <div class="col-3" *ngFor="let producto of productsAll">
+            <div class="camera-item">
+                <div>
+                    <img [src]="producto.img" alt="">
+                    <span (click)="GetIdToChange(producto.id)">Mostrar Detalles</span>
+                </div>
+                <span>{{producto.product}}</span>
+                <span>${{producto.price |number}}</span>
+            </div>
+        </div>
+    </div>
+    <!-- </div>
+    </div> -->
+</div>
